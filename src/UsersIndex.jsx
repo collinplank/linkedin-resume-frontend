@@ -1,4 +1,7 @@
+
 export function UsersIndex({ users, onShow }) {
+
+
   return (
     <div>
       <h1>Profiles</h1>
