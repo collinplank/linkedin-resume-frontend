@@ -4,6 +4,7 @@ import { UsersIndex } from "./UsersIndex";
 
 import { Modal } from "./Modal";
 import { UsersShow } from "./UsersShow";
+import UserProfileLinks from "./UserProfilesLinks";
 
 export function UsersPage() {
   const [users, setUsers] = useState([]);
@@ -29,6 +30,7 @@ export function UsersPage() {
   return (
     <main>
       <UsersIndex users={users} onShow={handleShow} />
+      <UserProfileLinks users={users} />
       <Modal show={isUsersShowVisible} onClose={() => setIsUsersShowVisible(false)}>
         <UsersShow user={currentUser} />
       </Modal>
