@@ -5,8 +5,6 @@ import { UsersPage } from "./UsersPage";
 import { UsersShow } from "./UsersShow";
 import { UsersIndexPage } from "./UsersIndexPage";
 import { UsersShowPage } from "./UsersShowPage";
-
-
 import { Footer } from "./Footer";
 
 axios.defaults.baseURL = "http://localhost:3000";
@@ -45,7 +43,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-return <RouterProvider router={router} />;
-
+  return <RouterProvider router={router} />;
+}
 
 export default App;
